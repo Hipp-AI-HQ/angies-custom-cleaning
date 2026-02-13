@@ -13,7 +13,7 @@ Build two polished demo websites (commercial and residential) for Angie's Custom
 Decimal phases appear between their surrounding integers in numeric order.
 
 - [x] **Phase 1: Design System** - Shared brand foundation (CSS variables, typography, responsive grid) used by both sites
-- [ ] **Phase 2: Commercial Site** - Complete single-page commercial cleaning site with all sections
+- [x] **Phase 2: Commercial Site** - Complete single-page commercial cleaning site with all sections
 - [ ] **Phase 3: Residential Site** - Complete single-page residential cleaning site with gift cards section
 - [ ] **Phase 4: Polish & Interactivity** - Scroll animations, hover effects, mobile CTA bar, hamburger menu
 - [ ] **Phase 5: Deployment & Testing** - Vercel deployment, Lighthouse audits, real-device mobile testing
@@ -48,11 +48,11 @@ Plans:
 **Plans**: 5 plans
 
 Plans:
-- [ ] 02-01-PLAN.md -- Content & assets preparation (extract images, create content document)
-- [ ] 02-02-PLAN.md -- HTML structure (semantic single-page layout with all sections)
-- [ ] 02-03-PLAN.md -- CSS styling (responsive layouts, design system integration)
-- [ ] 02-04-PLAN.md -- JavaScript enhancements (statistics animation, form handling)
-- [ ] 02-05-PLAN.md -- Verification checkpoint (human visual and functional testing)
+- [x] 02-01-PLAN.md -- Content & assets preparation (extract images, create content document)
+- [x] 02-02-PLAN.md -- HTML structure (semantic single-page layout with all sections)
+- [x] 02-03-PLAN.md -- CSS styling (responsive layouts, design system integration)
+- [x] 02-04-PLAN.md -- JavaScript enhancements (statistics animation, form handling)
+- [x] 02-05-PLAN.md -- Verification checkpoint (human visual and functional testing)
 
 ### Phase 3: Residential Site
 **Goal**: A visitor landing on the residential site gets the same quality and polish as the commercial site but with a warmer, home-focused tone -- plus a gift cards section that acknowledges this feature without requiring e-commerce
@@ -110,7 +110,7 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5
 | Phase | Plans Complete | Status | Completed |
 |-------|---------------|--------|-----------|
 | 1. Design System | 2/2 | ✓ Complete | 2026-02-13 |
-| 2. Commercial Site | 0/5 | Not started | - |
+| 2. Commercial Site | 5/5 | ✓ Complete | 2026-02-13 |
 | 3. Residential Site | 0/TBD | Not started | - |
 | 4. Polish & Interactivity | 0/TBD | Not started | - |
 | 5. Deployment & Testing | 0/TBD | Not started | - |
