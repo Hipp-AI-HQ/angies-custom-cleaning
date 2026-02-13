@@ -83,11 +83,13 @@ Plans:
   3. Hovering over buttons and service cards produces a visible lift + shadow transition on desktop
   4. Clicking navigation links scrolls smoothly to the target section (not an instant jump)
   5. On mobile, tapping the hamburger icon opens a slide-in navigation menu that covers the screen and closes when a link is tapped
-**Plans**: TBD
+**Plans**: 4 plans
 
 Plans:
-- [ ] 04-01: TBD
-- [ ] 04-02: TBD
+- [ ] 04-01-PLAN.md — AOS scroll animations and smooth scrolling for both sites
+- [ ] 04-02-PLAN.md — Mobile CTA bar and desktop hover effects for both sites
+- [ ] 04-03-PLAN.md — Hamburger menu with slide-in navigation for both sites
+- [ ] 04-04-PLAN.md — Human verification checkpoint for all interactivity
 
 ### Phase 5: Deployment & Testing
 **Goal**: Both sites are live on Vercel with clean, professional URLs, verified to load fast and work perfectly on a real mobile device -- ready to send to Angie
@@ -114,5 +116,5 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5
 | 1. Design System | 2/2 | ✓ Complete | 2026-02-13 |
 | 2. Commercial Site | 5/5 | ✓ Complete | 2026-02-13 |
 | 3. Residential Site | 5/5 | ✓ Complete | 2026-02-13 |
-| 4. Polish & Interactivity | 0/TBD | Not started | - |
+| 4. Polish & Interactivity | 0/4 | Not started | - |
 | 5. Deployment & Testing | 0/TBD | Not started | - |
