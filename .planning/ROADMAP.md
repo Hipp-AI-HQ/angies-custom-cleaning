@@ -15,7 +15,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 - [x] **Phase 1: Design System** - Shared brand foundation (CSS variables, typography, responsive grid) used by both sites
 - [x] **Phase 2: Commercial Site** - Complete single-page commercial cleaning site with all sections
 - [x] **Phase 3: Residential Site** - Complete single-page residential cleaning site with gift cards section
-- [ ] **Phase 4: Polish & Interactivity** - Scroll animations, hover effects, mobile CTA bar, hamburger menu
+- [x] **Phase 4: Polish & Interactivity** - Scroll animations, hover effects, mobile CTA bar, hamburger menu
 - [ ] **Phase 5: Deployment & Testing** - Vercel deployment, Lighthouse audits, real-device mobile testing
 
 ## Phase Details
@@ -86,10 +86,10 @@ Plans:
 **Plans**: 4 plans
 
 Plans:
-- [ ] 04-01-PLAN.md — AOS scroll animations and smooth scrolling for both sites
-- [ ] 04-02-PLAN.md — Mobile CTA bar and desktop hover effects for both sites
-- [ ] 04-03-PLAN.md — Hamburger menu with slide-in navigation for both sites
-- [ ] 04-04-PLAN.md — Human verification checkpoint for all interactivity
+- [x] 04-01-PLAN.md — AOS scroll animations and smooth scrolling for both sites
+- [x] 04-02-PLAN.md — Mobile CTA bar and desktop hover effects for both sites
+- [x] 04-03-PLAN.md — Hamburger menu with slide-in navigation for both sites
+- [x] 04-04-PLAN.md — Human verification checkpoint for all interactivity
 
 ### Phase 5: Deployment & Testing
 **Goal**: Both sites are live on Vercel with clean, professional URLs, verified to load fast and work perfectly on a real mobile device -- ready to send to Angie
@@ -116,5 +116,5 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5
 | 1. Design System | 2/2 | ✓ Complete | 2026-02-13 |
 | 2. Commercial Site | 5/5 | ✓ Complete | 2026-02-13 |
 | 3. Residential Site | 5/5 | ✓ Complete | 2026-02-13 |
-| 4. Polish & Interactivity | 0/4 | Not started | - |
+| 4. Polish & Interactivity | 4/4 | ✓ Complete | 2026-02-13 |
 | 5. Deployment & Testing | 0/TBD | Not started | - |

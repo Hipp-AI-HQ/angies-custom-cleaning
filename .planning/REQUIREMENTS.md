@@ -42,11 +42,11 @@
 
 ### Polish & Interactivity
 
-- [ ] **PLSH-01**: AOS scroll animations (fade-up on sections and cards)
-- [ ] **PLSH-02**: Sticky mobile CTA bar — fixed "Call Now" button at bottom of mobile viewport
-- [ ] **PLSH-03**: CSS hover transitions on buttons and service cards (lift + shadow)
-- [ ] **PLSH-04**: Smooth scroll behavior for anchor navigation
-- [ ] **PLSH-05**: Mobile hamburger menu with slide-in navigation
+- [x] **PLSH-01**: AOS scroll animations (fade-up on sections and cards)
+- [x] **PLSH-02**: Sticky mobile CTA bar — fixed "Call Now" button at bottom of mobile viewport
+- [x] **PLSH-03**: CSS hover transitions on buttons and service cards (lift + shadow)
+- [x] **PLSH-04**: Smooth scroll behavior for anchor navigation
+- [x] **PLSH-05**: Mobile hamburger menu with slide-in navigation
 
 ### Deployment
 
@@ -111,11 +111,11 @@
 | RESI-09 | Phase 3 | Complete |
 | RESI-10 | Phase 3 | Complete |
 | RESI-11 | Phase 3 | Complete |
-| PLSH-01 | Phase 4 | Pending |
-| PLSH-02 | Phase 4 | Pending |
-| PLSH-03 | Phase 4 | Pending |
-| PLSH-04 | Phase 4 | Pending |
-| PLSH-05 | Phase 4 | Pending |
+| PLSH-01 | Phase 4 | Complete |
+| PLSH-02 | Phase 4 | Complete |
+| PLSH-03 | Phase 4 | Complete |
+| PLSH-04 | Phase 4 | Complete |
+| PLSH-05 | Phase 4 | Complete |
 | DPLY-01 | Phase 5 | Pending |
 | DPLY-02 | Phase 5 | Pending |
 | DPLY-03 | Phase 5 | Pending |
@@ -128,4 +128,4 @@
 
 ---
 *Requirements defined: 2026-02-13*
-*Last updated: 2026-02-13 after initial definition*
+*Last updated: 2026-02-13 after Phase 4 completion*
