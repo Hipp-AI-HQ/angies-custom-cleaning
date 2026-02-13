@@ -226,7 +226,161 @@
       </div>
     </section>
 
+    <!-- Testimonials section -->
+    <section id="testimonials" class="testimonials section">
+      <div class="container">
+        <h2 class="section__title">What Our Clients Say</h2>
+        <p class="section__note">Client testimonials coming soon.</p>
+      </div>
+    </section>
+
+    <!-- About section -->
+    <section id="about" class="about section section--alt">
+      <div class="container">
+        <h2 class="section__title">About Angie's Custom Cleaning</h2>
+        <div class="about__content">
+          <div class="about__story">
+            <p>Founded in 2012, Angie's Custom Cleaning was created to address a critical need in Lancaster County: high-quality commercial cleaning services delivered with integrity, reliability, and attention to detail.</p>
+
+            <p>What started as a one-woman operation has grown into a trusted team of 20 background-checked, insured professionals. This growth reflects our unwavering commitment to superior service at ultra-competitive prices—a combination that has earned us awards, loyal clients, and the reputation as Lancaster's favorite commercial cleaning service.</p>
+
+            <p>We understand that your office is more than just a workplace—it's where you build your business, serve your clients, and spend a significant portion of your day. That's why we don't just clean; we maintain your clean legacy with the same care and professionalism you bring to your own work.</p>
+
+            <p>Every member of our team is thoroughly background-checked, bonded, and insured. We conduct frequent quality inspections to ensure our high standards are maintained across every job site. Whether you need weekly office cleaning, carpet steam cleaning, or floor maintenance, you can trust Angie's Custom Cleaning to deliver exceptional results.</p>
+          </div>
+
+          <div class="about__differentiators">
+            <h3>Why We're Different:</h3>
+            <ul>
+              <li>Background-checked, professional staff</li>
+              <li>Bonded and fully insured</li>
+              <li>Frequent quality inspections</li>
+              <li>Award-winning service (Angie's List Super Service Award, Readers' Choice Award)</li>
+              <li>Flexible scheduling (day or night)</li>
+              <li>Ultra-competitive pricing</li>
+            </ul>
+          </div>
+
+          <div class="about__mission">
+            <p><strong>Our mission is simple:</strong> provide Lancaster County businesses with the cleanest offices at the best prices, delivered by people you can trust.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact section -->
+    <section id="contact" class="contact section">
+      <div class="container">
+        <h2 class="section__title">Contact Us</h2>
+        <div class="contact__content">
+
+          <div class="contact__info">
+            <h3>Get in Touch</h3>
+            <p><strong>Phone:</strong> <a href="tel:+17176150968">717-615-0968</a></p>
+            <p><strong>Email:</strong> <a href="mailto:angie@angiescustomcleaning.com">angie@angiescustomcleaning.com</a></p>
+            <p><strong>Address:</strong> 340 Abbeyville Road, Lancaster PA 17603</p>
+            <p><strong>Hours:</strong> Monday-Friday, 9am-4pm</p>
+          </div>
+
+          <form class="contact__form" aria-label="Contact form" onsubmit="event.preventDefault(); alert('This is a demo form. In production, this would submit to a backend.');">
+
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required aria-required="true">
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required aria-required="true">
+            </div>
+
+            <div class="form-group">
+              <label for="company">Company Name</label>
+              <input type="text" id="company" name="company">
+            </div>
+
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone">
+            </div>
+
+            <div class="form-group">
+              <label for="service">Service Interested In</label>
+              <select id="service" name="service">
+                <option value="">Select a service</option>
+                <option value="office-cleaning">Office Cleaning</option>
+                <option value="carpet-steam-cleaning">Carpet Steam Cleaning</option>
+                <option value="floor-services">Floor Services</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" required aria-required="true"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn--primary">Request Free Quote</button>
+
+            <p class="form__disclaimer">This is a demo form. In production, this would submit via Formspree, Netlify Forms, or a similar service and send an email notification to angie@angiescustomcleaning.com.</p>
+          </form>
+
+        </div>
+      </div>
+    </section>
+
   </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer__content">
+
+        <div class="footer__brand">
+          <picture>
+            <source srcset="images/logo.webp" type="image/webp">
+            <img src="images/logo.png" alt="Angie's Custom Cleaning" width="180" height="72">
+          </picture>
+          <p class="footer__tagline">Lancaster County's award-winning commercial cleaning service since 2012</p>
+        </div>
+
+        <div class="footer__links">
+          <h3>Quick Links</h3>
+          <nav aria-label="Footer navigation">
+            <ul>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#why-us">Why Choose Us</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="footer__contact">
+          <h3>Contact Info</h3>
+          <p><strong>Phone:</strong> <a href="tel:+17176150968">717-615-0968</a></p>
+          <p><strong>Address:</strong> 340 Abbeyville Road, Lancaster PA 17603</p>
+          <p><strong>Hours:</strong> Monday-Friday, 9am-4pm</p>
+        </div>
+
+        <div class="footer__awards">
+          <h3>Awards</h3>
+          <ul>
+            <li>Angie's List Super Service Award</li>
+            <li>2013, 2014, 2015, 2016, 2017</li>
+            <li>Lancaster Newspaper Readers' Choice</li>
+            <li>2017, 2019</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__copyright">&copy; 2026 Angie's Custom Cleaning. Serving Lancaster County, PA. All rights reserved.</p>
+        <p class="footer__legal">This is a demonstration website created to showcase web development capabilities. For the production site, additional sections would include Privacy Policy, Terms of Service, and any required business licensing information.</p>
+      </div>
+    </div>
+  </footer>
 
 </body>
 </html>
