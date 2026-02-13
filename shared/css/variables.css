@@ -1,0 +1,93 @@
+/* ==========================================================================
+   Design Tokens -- CSS Custom Properties
+   All design values for Angie's Custom Cleaning brand system
+   ========================================================================== */
+
+:root {
+  /* ---- Colors ---- */
+
+  /* Primary: Blue brand family (derived from actual brand #005982) */
+  --color-primary: #005982;          /* Main brand blue -- headers, links, primary buttons */
+  --color-primary-light: #0077AD;    /* Lighter blue -- hover states, secondary elements */
+  --color-primary-dark: #003D5C;     /* Dark blue -- footer, nav background */
+  --color-primary-50: #E6F2F8;       /* Very light blue -- subtle backgrounds, highlights */
+  --color-primary-100: #B3D9EA;      /* Light blue -- borders, dividers */
+
+  /* Accent: Warm orange (complementary to blue on color wheel) */
+  --color-accent: #E67E22;           /* CTAs, highlights, call-to-action buttons */
+  --color-accent-hover: #D35400;     /* Hover state for accent */
+  --color-accent-light: #FDEBD0;     /* Light accent for badge backgrounds */
+
+  /* Backgrounds: Warm whites (NOT pure #FFF) */
+  --color-bg: #FDFAF6;              /* Primary background -- warm cream-white */
+  --color-bg-alt: #F5F0EB;          /* Alternating section background -- warm light gray */
+  --color-surface: #FFFFFF;          /* Cards, elevated surfaces */
+
+  /* Text: Warm dark tones (NOT pure black) */
+  --color-text: #2C3E50;            /* Primary body text */
+  --color-text-light: #5D6D7E;      /* Secondary text, captions */
+  --color-text-on-dark: #F8F9FA;    /* Text on dark backgrounds */
+  --color-text-on-primary: #FFFFFF; /* Text on primary blue */
+
+  /* Semantic */
+  --color-success: #27AE60;
+  --color-border: #E0DCD7;          /* Warm gray border */
+  --color-white: #FFFFFF;
+
+  /* ---- Typography ---- */
+
+  /* Font families (with metric-matched fallbacks to reduce FOUT) */
+  --font-heading: 'Nunito', 'Segoe UI', Tahoma, sans-serif;
+  --font-body: 'Open Sans', -apple-system, system-ui, sans-serif;
+
+  /* Fluid type scale (min @ 400px viewport, max @ 1280px viewport) */
+  /* Source: fluid-type-scale.com with 1.25 ratio (mobile) to 1.333 ratio (desktop) */
+  --fs-sm: clamp(0.833rem, 0.816rem + 0.085vw, 0.889rem);    /* ~13-14px */
+  --fs-base: clamp(1rem, 0.966rem + 0.17vw, 1.125rem);        /* 16-18px */
+  --fs-md: clamp(1.25rem, 1.182rem + 0.341vw, 1.5rem);        /* 20-24px */
+  --fs-lg: clamp(1.563rem, 1.437rem + 0.625vw, 1.969rem);     /* 25-31px */
+  --fs-xl: clamp(1.953rem, 1.745rem + 1.042vw, 2.625rem);     /* 31-42px */
+  --fs-xxl: clamp(2.441rem, 2.11rem + 1.654vw, 3.5rem);       /* 39-56px */
+
+  /* Line heights and letter spacing */
+  --line-height-body: 1.6;
+  --line-height-heading: 1.2;
+  --letter-spacing-heading: -0.02em;
+
+  /* ---- Spacing Scale ---- */
+
+  --space-xs: 0.25rem;    /* 4px */
+  --space-sm: 0.5rem;     /* 8px */
+  --space-md: 1rem;       /* 16px */
+  --space-lg: 1.5rem;     /* 24px */
+  --space-xl: 2rem;       /* 32px */
+  --space-2xl: 3rem;      /* 48px */
+  --space-3xl: 4rem;      /* 64px */
+  --space-4xl: 6rem;      /* 96px */
+  --space-section: clamp(3rem, 2.5rem + 2.5vw, 6rem); /* Section padding */
+
+  /* ---- Layout ---- */
+
+  --container-max: 1200px;
+  --container-padding: var(--space-md);
+
+  /* ---- Border Radius ---- */
+
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 16px;
+  --radius-full: 9999px;
+
+  /* ---- Shadows ---- */
+
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.08);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 30px rgba(0, 0, 0, 0.12);
+  --shadow-xl: 0 20px 40px rgba(0, 0, 0, 0.15);
+
+  /* ---- Transitions ---- */
+
+  --transition-fast: 150ms ease;
+  --transition-base: 250ms ease;
+  --transition-slow: 400ms ease;
+}
