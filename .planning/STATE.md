@@ -10,18 +10,18 @@ See: .planning/PROJECT.md (updated 2026-02-13)
 ## Current Position
 
 Phase: 3 of 5 (Residential Site) -- IN PROGRESS
-Plan: 1 of 3 in phase 3 (complete)
-Status: Phase 3 started. Content preparation complete.
-Last activity: 2026-02-13 -- Completed 03-01-PLAN.md (content & asset preparation)
+Plan: 2 of 3 in phase 3 (complete)
+Status: Phase 3 in progress. HTML structure complete.
+Last activity: 2026-02-13 -- Completed 03-02-PLAN.md (HTML structure development)
 
-Progress: [########..] 67% (8/12 plans)
+Progress: [#########.] 75% (9/12 plans)
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 8
+- Total plans completed: 9
 - Average duration: 2.3min
-- Total execution time: 19min 4sec
+- Total execution time: 21min 12sec
 
 **By Phase:**
 
@@ -29,10 +29,10 @@ Progress: [########..] 67% (8/12 plans)
 |-------|-------|-------|----------|
 | 01-design-system | 2/2 | 5min | 2.5min |
 | 02-commercial-site | 5/5 | 11min 16sec | 2.3min |
-| 03-residential-site | 1/3 | 2min 48sec | 2.8min |
+| 03-residential-site | 2/3 | 4min 56sec | 2.5min |
 
 **Recent Trend:**
-- Last 5 plans: 02-02 (2.5min), 02-03 (2.8min), 02-04 (1.2min), 02-05 (<1min), 03-01 (2.8min)
+- Last 5 plans: 02-03 (2.8min), 02-04 (1.2min), 02-05 (<1min), 03-01 (2.8min), 03-02 (2.1min)
 - Trend: Consistent velocity, efficient automation
 
 *Updated after each plan completion*
@@ -77,6 +77,10 @@ Recent decisions affecting current work:
 - Service area Lancaster & York Counties for residential (vs Lancaster County only for commercial)
 - Three distinct service types with clear scope differentiation (regular/deep/move-in-out)
 - Gift card design workflow: CSS mockups + headless Chrome + WebP optimization
+- Residential tone differentiation: warmer, personal language vs. commercial's formal business tone
+- Gift cards as informational showcase (no e-commerce checkout) with call-to-order CTA
+- Service inclusion lists clarify scope differences (regular maintenance vs. deep clean vs. empty property)
+- Duplication + customization strategy: copy commercial structure, customize content for residential audience
 
 ### Pending Todos
 
@@ -88,6 +92,6 @@ None.
 
 ## Session Continuity
 
-Last session: 2026-02-13T07:42:46Z
-Stopped at: Completed 03-01-PLAN.md (content & asset preparation) -- Phase 3 plan 1 complete
+Last session: 2026-02-13T07:47:47Z
+Stopped at: Completed 03-02-PLAN.md (HTML structure development) -- Phase 3 plan 2 complete
 Resume file: None
