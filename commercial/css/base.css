@@ -1,0 +1,92 @@
+/* ==========================================================================
+   Base Element Styles
+   Styles for HTML elements using design tokens from variables.css
+   No hard-coded values -- all references via var()
+   ========================================================================== */
+
+/* ---- Body ---- */
+
+body {
+  font-family: var(--font-body);
+  font-size: var(--fs-base);
+  line-height: var(--line-height-body);
+  color: var(--color-text);
+  background-color: var(--color-bg);
+}
+
+/* ---- Headings ---- */
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  line-height: var(--line-height-heading);
+  margin-bottom: var(--space-md);
+}
+
+h1 {
+  font-size: var(--fs-xxl);
+  font-weight: 800;
+  letter-spacing: var(--letter-spacing-heading);
+  color: var(--color-primary-dark);
+}
+
+h2 {
+  font-size: var(--fs-xl);
+  font-weight: 700;
+  letter-spacing: var(--letter-spacing-heading);
+  color: var(--color-primary-dark);
+}
+
+h3 {
+  font-size: var(--fs-lg);
+  font-weight: 700;
+  color: var(--color-text);
+}
+
+h4 {
+  font-size: var(--fs-md);
+  font-weight: 700;
+  color: var(--color-text);
+}
+
+h5 {
+  font-size: var(--fs-base);
+  font-weight: 700;
+  color: var(--color-text);
+}
+
+h6 {
+  font-size: var(--fs-sm);
+  font-weight: 700;
+  color: var(--color-text-light);
+}
+
+/* ---- Paragraphs ---- */
+
+p {
+  margin-bottom: var(--space-md);
+  max-width: 70ch;
+  font-size: var(--fs-base);
+}
+
+/* ---- Links ---- */
+
+a {
+  color: var(--color-primary);
+  text-decoration-skip-ink: auto;
+  transition: color var(--transition-fast);
+}
+
+a:hover {
+  color: var(--color-primary-light);
+}
+
+/* ---- Lists ---- */
+
+ul, ol {
+  padding-left: var(--space-xl);
+  margin-bottom: var(--space-md);
+}
+
+li {
+  margin-bottom: var(--space-xs);
+}

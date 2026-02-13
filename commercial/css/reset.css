@@ -1,0 +1,71 @@
+/* ==========================================================================
+   Modern CSS Reset
+   Based on Josh Comeau's CSS Reset (2025) + Andy Bell hybrid
+   Source: joshwcomeau.com/css/custom-css-reset/
+   ========================================================================== */
+
+/* 1. Box-sizing */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margins (exclude dialog for auto-centering) */
+*:not(dialog) {
+  margin: 0;
+}
+
+/* 3. Smooth scrolling (respect reduced-motion preference) */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/* 4. Body defaults */
+body {
+  min-height: 100vh;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* 5. Media defaults */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 6. Form inheritance */
+input, button, textarea, select {
+  font: inherit;
+}
+
+/* 7. Text overflow */
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/* 8. Text wrapping (progressive enhancement) */
+p {
+  text-wrap: pretty;
+}
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+
+/* 9. Reduced motion: remove all animations/transitions */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* 10. Prevent text size adjustment on orientation change */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
