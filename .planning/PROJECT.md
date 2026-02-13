@@ -2,7 +2,23 @@
 
 ## What This Is
 
-Two polished demo websites (commercial and residential) for Angie's Custom Cleaning, a cleaning business in Lancaster, PA. These are sales tools — deployed to live Vercel URLs and sent via email to win the client. Angie's previous developer took $5K and disappeared, so the work needs to speak for itself with no pitch meeting.
+Two polished demo websites (commercial and residential) for Angie's Custom Cleaning, a cleaning business in Lancaster, PA. Built and deployed to demonstrate capability to a prospective client whose previous developer took $5K and disappeared.
+
+## Current State (v1.0 — Shipped 2026-02-13)
+
+**Live Sites:**
+- Commercial: https://angies-commercial-cleaning.vercel.app
+- Residential: https://angies-residential-cleaning.vercel.app
+
+**Status:** Demo complete, ready to send to Angie. Awaiting client response.
+
+**Tech Stack:** Static HTML/CSS/JS (no frameworks), ~22,474 LOC, deployed via Vercel
+
+**Performance:**
+- Desktop Lighthouse: 99/100 (both sites)
+- Mobile Lighthouse: 84/100 (both sites, target was 90+)
+- Core Web Vitals: Excellent (TBT 0ms, CLS 0)
+- Real device tested: All features functional
 
 ## Core Value
 
@@ -12,22 +28,24 @@ The demos must immediately look better than Angie's current WordPress sites — 
 
 ### Validated
 
-(None yet — ship to validate)
+- ✓ Commercial site with hero, services, trust signals, about, and contact sections — v1.0
+- ✓ Residential site with hero, services, trust signals, about, and contact sections — v1.0
+- ✓ Shared blue brand identity across both sites (51 CSS custom properties) — v1.0
+- ✓ Warm, trustworthy design aesthetic — friendly, community feel — v1.0
+- ✓ Mobile-first responsive design (breakpoints at 768px, 1024px) — v1.0
+- ✓ Fast loading — static HTML/CSS/JS, no framework bloat — v1.0
+- ✓ Real content from her current sites (zero Lorem Ipsum) — v1.0
+- ✓ Award badges and credentials prominently displayed — v1.0
+- ✓ Contact information visible (phone, address, hours) — v1.0
+- ✓ Service descriptions for each division — v1.0
+- ✓ Angie's personal story / founder bio — v1.0
+- ✓ Deployed to Vercel with shareable URLs — v1.0
+- ✓ Scroll animations and interactive polish (AOS, hover effects, hamburger menu) — v1.0
+- ✓ Gift cards section on residential site — v1.0
 
 ### Active
 
-- [ ] Commercial site with hero, services, trust signals, about, and contact sections
-- [ ] Residential site with hero, services, trust signals, about, and contact sections
-- [ ] Shared blue brand identity across both sites (matching her logo, not the purple she dislikes)
-- [ ] Warm, trustworthy design aesthetic — friendly, community feel
-- [ ] Mobile-first responsive design
-- [ ] Fast loading — static HTML/CSS/JS, no framework bloat
-- [ ] Real content from her current sites (no fabricated information)
-- [ ] Award badges and credentials prominently displayed (Angie's List, Readers' Choice, Super Service Award)
-- [ ] Contact information visible (phone, address, hours)
-- [ ] Service descriptions for each division (commercial: office, carpet, floor; residential: home cleaning)
-- [ ] Angie's personal story / founder bio
-- [ ] Deployed to Vercel with shareable URLs
+(None — v1.0 shipped, awaiting client response for production direction)
 
 ### Out of Scope
 
@@ -39,13 +57,30 @@ The demos must immediately look better than Angie's current WordPress sites — 
 
 ## Context
 
-- **Sales situation:** Cold outreach via email, no reply yet. Mutual friend confirmed she needs a developer. Previous dev took $5K and stopped responding.
-- **Strategy:** Build two polished demos, deploy to live URLs, send as follow-up proof. No pitch needed — the work speaks for itself.
-- **Brand pain point:** Angie doesn't like the purple on her residential site (angiescustomcleaning.com). Her actual brand is blue, matching the commercial site (angiescommercialcleaning.com).
-- **Current sites:** Both run WordPress + WPBakery Page Builder with RevSlider carousels. Heavy, dated, slow.
-- **Two divisions:** Commercial cleaning (offices, carpets, floors) and residential cleaning (home cleaning, gift cards).
-- **Service area:** Lancaster County and York, PA.
-- **Business info:** 717-615-0968, 340 Abbeyville Road, Lancaster PA 17603, Mon-Fri 9am-4pm.
+**v1.0 Shipped (2026-02-13):**
+- Built in 1 day: 5 phases, 19 plans, 16 production files
+- Both sites deployed with clean Vercel URLs
+- Design system with 51 CSS variables shared across sites
+- Scroll animations (48 total), mobile CTA, hamburger menu, hover effects
+- Real content throughout (zero fabricated information)
+- Desktop performance exceptional (99/100), mobile good (84/100)
+
+**Known Gaps:**
+- Mobile Lighthouse 84 vs 90 target (accepted as demo quality)
+- Forms are placeholders (demo alerts, not live submission)
+- No e-commerce for gift cards (showcase only)
+
+**Client Background:**
+- Angie's Custom Cleaning, Lancaster PA (commercial + residential divisions)
+- Previous developer took $5K and disappeared
+- Current sites: WordPress + WPBakery (heavy, dated, slow)
+- Brand colors: Blue (correct), not purple (she dislikes current residential purple)
+- Service area: Lancaster County and York, PA
+- Business: 717-615-0968, 340 Abbeyville Road, Mon-Fri 9am-4pm
+
+**Next Steps:**
+- Send demo URLs to Angie via email
+- If she signs on: plan production enhancements (working forms, custom domains, potential mobile optimization)
 
 ## Constraints
 
@@ -58,10 +93,14 @@ The demos must immediately look better than Angie's current WordPress sites — 
 
 | Decision | Rationale | Outcome |
 |----------|-----------|---------|
-| Static HTML/CSS/JS over framework | Demo sites don't need React/Vue complexity; faster to build, faster to load | — Pending |
-| Blue brand palette, drop purple | Angie actively dislikes the purple; blue matches her actual brand/logo | — Pending |
-| Shared brand family across both sites | Same business, should feel cohesive even with different service focus | — Pending |
-| Vercel for hosting | Simple GitHub integration, free tier, instant deploy, shareable URLs | — Pending |
+| Static HTML/CSS/JS over framework | Demo sites don't need React/Vue complexity; faster to build, faster to load | ✓ Good — Sites load fast, desktop 99/100 Lighthouse |
+| Blue brand palette, drop purple | Angie actively dislikes the purple; blue matches her actual brand/logo | ✓ Good — Consistent blue identity (#005982) across both sites |
+| Shared brand family across both sites | Same business, should feel cohesive even with different service focus | ✓ Good — 51 CSS variables shared, distinct tones maintained |
+| Vercel for hosting | Simple GitHub integration, free tier, instant deploy, shareable URLs | ✓ Good — Clean URLs, CDN caching, HTTPS, instant deploys |
+| AOS for scroll animations | Lightweight library, no build step, simple integration | ✓ Good — 48 animations, 600ms duration, professional feel |
+| Mobile-first CSS architecture | Cleaning service customers search on phones | ✓ Good — Responsive across devices, mobile CTA bar works |
+| WebP + fallback images | Reduce file sizes without losing quality | ✓ Good — 60-75% file size reduction, all browsers supported |
+| Accept 84 mobile Lighthouse | Focus on demo impact over score perfection | ✓ Good — Sites function perfectly on real devices, optimization can be production work |
 
 ---
-*Last updated: 2026-02-13 after initialization*
+*Last updated: 2026-02-13 after v1.0 milestone completion*

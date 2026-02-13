@@ -1,0 +1,162 @@
+# Requirements Archive: v1.0 Demo Sites
+
+**Archived:** 2026-02-13
+**Status:** ✅ SHIPPED
+
+This is the archived requirements specification for v1.0.
+For current project status, see `.planning/PROJECT.md`.
+
+---
+
+# Requirements: Angie's Custom Cleaning Demo Sites
+
+**Defined:** 2026-02-13
+**Core Value:** The demos must immediately look better than Angie's current WordPress sites — faster, cleaner, mobile-friendly, and visually trustworthy — so she reaches out to move forward.
+
+## v1 Requirements
+
+### Design System
+
+- [x] **DSGN-01**: Shared CSS custom properties defining blue brand palette, typography scale, and spacing
+- [x] **DSGN-02**: Nunito (headings) + Open Sans (body) via Google Fonts with preconnect optimization
+- [x] **DSGN-03**: Modern CSS reset with smooth scrolling and font-smoothing
+- [x] **DSGN-04**: Mobile-first responsive layout with breakpoints at 768px and 1024px
+- [x] **DSGN-05**: Warm, trustworthy color scheme — blue primary, warm white backgrounds, warm orange accent
+
+### Commercial Site
+
+- [x] **COMM-01**: Sticky header with logo, navigation anchors, and tap-to-call phone number
+- [x] **COMM-02**: Hero section with headline, subheadline, "Get a Free Estimate" CTA, and trust badge strip
+- [x] **COMM-03**: Services grid — office cleaning, carpet steam cleaning, floor services (3 cards with icons)
+- [x] **COMM-04**: "Why Choose Us" section with icon grid (background-checked, insured, inspections, competitive pricing, locally owned)
+- [x] **COMM-05**: "How It Works" 3-4 step process section
+- [x] **COMM-06**: Animated statistics strip (years in business, clients served, background-checked, award winner)
+- [x] **COMM-07**: Testimonials section (2-3 attributed quotes from business owners)
+- [x] **COMM-08**: About section with Angie's story and founder messaging
+- [x] **COMM-09**: Contact section with phone, address, hours, and placeholder contact form
+- [x] **COMM-10**: Footer with full contact info, nav links, and "Serving Lancaster County, PA"
+
+### Residential Site
+
+- [x] **RESI-01**: Sticky header with logo, navigation anchors, and tap-to-call phone number
+- [x] **RESI-02**: Hero section with warm headline, subheadline, CTA, and trust badge strip
+- [x] **RESI-03**: Services grid — regular cleaning, deep cleaning, move-in/out cleaning (3-4 cards with icons)
+- [x] **RESI-04**: "Why Choose Us" section with warmer tone (trustworthy staff, flexible scheduling, satisfaction guaranteed, locally owned)
+- [x] **RESI-05**: "How It Works" 3-step process section
+- [x] **RESI-06**: Testimonials section (2-3 attributed homeowner quotes)
+- [x] **RESI-07**: Gift cards section — "Give the Gift of a Clean Home" with gift card designs and pricing tiers
+- [x] **RESI-08**: About section with Angie's story, residential-focused angle
+- [x] **RESI-09**: Animated statistics strip (awards, years in business, homes cleaned, family owned)
+- [x] **RESI-10**: Contact section with phone, address, hours, and placeholder contact form
+- [x] **RESI-11**: Footer with full contact info, nav links, gift card mention, "Serving Lancaster & York Counties"
+
+### Polish & Interactivity
+
+- [x] **PLSH-01**: AOS scroll animations (fade-up on sections and cards)
+- [x] **PLSH-02**: Sticky mobile CTA bar — fixed "Call Now" button at bottom of mobile viewport
+- [x] **PLSH-03**: CSS hover transitions on buttons and service cards (lift + shadow)
+- [x] **PLSH-04**: Smooth scroll behavior for anchor navigation
+- [x] **PLSH-05**: Mobile hamburger menu with slide-in navigation
+
+### Deployment
+
+- [x] **DPLY-01**: Commercial site deployed to Vercel with clean project name
+- [x] **DPLY-02**: Residential site deployed to Vercel with clean project name
+- [x] **DPLY-03**: Both sites score 90+ on Lighthouse Performance (Partial: Desktop 99✓, Mobile 84✗)
+- [x] **DPLY-04**: Both sites tested on real mobile device before delivery
+
+## v2 Requirements (Deferred to Production)
+
+### Production Features (if Angie signs on)
+
+- **PROD-01**: Working contact form via Formspree or similar service
+- **PROD-02**: Custom domain setup (angiescommercialcleaning.com, angiescustomcleaning.com)
+- **PROD-03**: Gift card e-commerce via Stripe/Square integration
+- **PROD-04**: SEO meta tags and structured data (LocalBusiness schema)
+- **PROD-05**: Google Analytics or privacy-friendly analytics
+- **PROD-06**: Google Maps embed in contact section
+
+## Out of Scope
+
+| Feature | Reason |
+|---------|--------|
+| Working contact form submission | Demo only — placeholder sufficient, Formspree in production |
+| E-commerce / online gift card purchasing | Requires Stripe/Square integration — deferred to production |
+| Blog | No content to populate, not needed for demo impact |
+| WordPress admin / CMS | Static sites only — CMS would be a production decision |
+| Online booking / scheduling | Complex integration not needed for demo |
+| Pricing calculator or price lists | Cleaning pricing is variable — "Free Quote" CTA instead |
+| Live chat widget | Requires staffing or bot setup |
+| Customer login / portal | Enterprise feature not relevant |
+| Multi-page deep navigation | Single-page scrolling is more impactful for demos |
+| SEO optimization | Important for production, irrelevant for Vercel demo URLs |
+
+## Traceability
+
+| Requirement | Phase | Status |
+|-------------|-------|--------|
+| DSGN-01 | Phase 1 | Complete ✓ |
+| DSGN-02 | Phase 1 | Complete ✓ |
+| DSGN-03 | Phase 1 | Complete ✓ |
+| DSGN-04 | Phase 1 | Complete ✓ |
+| DSGN-05 | Phase 1 | Complete ✓ |
+| COMM-01 | Phase 2 | Complete ✓ |
+| COMM-02 | Phase 2 | Complete ✓ |
+| COMM-03 | Phase 2 | Complete ✓ |
+| COMM-04 | Phase 2 | Complete ✓ |
+| COMM-05 | Phase 2 | Complete ✓ |
+| COMM-06 | Phase 2 | Complete ✓ |
+| COMM-07 | Phase 2 | Complete ✓ |
+| COMM-08 | Phase 2 | Complete ✓ |
+| COMM-09 | Phase 2 | Complete ✓ |
+| COMM-10 | Phase 2 | Complete ✓ |
+| RESI-01 | Phase 3 | Complete ✓ |
+| RESI-02 | Phase 3 | Complete ✓ |
+| RESI-03 | Phase 3 | Complete ✓ |
+| RESI-04 | Phase 3 | Complete ✓ |
+| RESI-05 | Phase 3 | Complete ✓ |
+| RESI-06 | Phase 3 | Complete ✓ |
+| RESI-07 | Phase 3 | Complete ✓ |
+| RESI-08 | Phase 3 | Complete ✓ |
+| RESI-09 | Phase 3 | Complete ✓ |
+| RESI-10 | Phase 3 | Complete ✓ |
+| RESI-11 | Phase 3 | Complete ✓ |
+| PLSH-01 | Phase 4 | Complete ✓ |
+| PLSH-02 | Phase 4 | Complete ✓ |
+| PLSH-03 | Phase 4 | Complete ✓ |
+| PLSH-04 | Phase 4 | Complete ✓ |
+| PLSH-05 | Phase 4 | Complete ✓ |
+| DPLY-01 | Phase 5 | Complete ✓ |
+| DPLY-02 | Phase 5 | Complete ✓ |
+| DPLY-03 | Phase 5 | Partial ⚠️ (Desktop 99✓, Mobile 84✗) |
+| DPLY-04 | Phase 5 | Complete ✓ |
+
+**Coverage:**
+- v1 requirements: 34 total
+- Fully satisfied: 33
+- Partially satisfied: 1 (DPLY-03)
+- Completion rate: 97.1%
+
+---
+
+## Milestone Summary
+
+**Shipped:** 33 of 34 v1 requirements (97.1% complete)
+
+**Adjusted:**
+- DPLY-03 (Lighthouse Performance 90+): Desktop exceeded expectations (99/100), mobile fell short (84/100 vs 90 target). Accepted as demo quality — sites function perfectly on real devices, optimization can be production work if client signs on.
+
+**Dropped:**
+- None. All requirements either fully satisfied or partially satisfied (DPLY-03).
+
+**Key Outcomes:**
+- Both sites deployed and accessible at clean Vercel URLs
+- Design system shared across sites (51 CSS custom properties)
+- Real content throughout (zero Lorem Ipsum)
+- Scroll animations, mobile UX, hover effects all working
+- Desktop performance exceptional (99/100)
+- Mobile performance good but shy of target (84/100)
+
+---
+
+*Archived: 2026-02-13 as part of v1.0 milestone completion*

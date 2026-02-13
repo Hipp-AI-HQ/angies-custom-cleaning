@@ -5,16 +5,18 @@
 See: .planning/PROJECT.md (updated 2026-02-13)
 
 **Core value:** The demos must immediately look better than Angie's current WordPress sites -- faster, cleaner, mobile-friendly, and visually trustworthy -- so she reaches out to move forward.
-**Current focus:** Phase 5 in progress. Sites deployed to Vercel.
+**Current focus:** v1.0 milestone complete. Awaiting client response for next steps.
 
 ## Current Position
 
-Phase: 5 of 5 (Deployment & Testing) -- COMPLETE
-Plan: 3 of 3 in phase 5 (complete)
-Status: Both sites deployed, optimized, and verified on real mobile devices. Demo-ready for client delivery.
-Last activity: 2026-02-13 -- Completed 05-03-PLAN.md (Real device mobile testing)
+Milestone: v1.0 — SHIPPED (2026-02-13)
+Phases: 1-5 complete (19 plans total)
+Status: Ready to send demo URLs to Angie
+Last activity: 2026-02-13 — v1.0 milestone archived
 
-Progress: [███████████████████] 100% (19/19 plans)
+Progress: ✅ v1.0 Complete
+
+**Next milestone:** To be determined based on client response
 
 ## Performance Metrics
 
@@ -43,8 +45,8 @@ Progress: [███████████████████] 100% (19/1
 
 ### Decisions
 
-Decisions are logged in PROJECT.md Key Decisions table.
-Recent decisions affecting current work:
+All v1.0 decisions archived in PROJECT.md Key Decisions table.
+Summary of key outcomes:
 
 - Static HTML/CSS/JS stack (no frameworks, no build tools)
 - Blue brand palette, drop purple (matches Angie's actual brand)
@@ -120,18 +122,26 @@ Recent decisions affecting current work:
 
 ### Pending Todos
 
-None.
+- Send demo URLs to Angie via email
+- Await client response
+- Plan v2 based on client feedback (if she signs on)
 
 ### Blockers/Concerns
 
-None.
+None. Project is demo-ready.
 
 ## Session Continuity
 
-Last session: 2026-02-13T14:48:31Z
-Stopped at: Completed 05-03-PLAN.md -- Real device mobile testing passed, project complete
+Last session: 2026-02-13
+Stopped at: v1.0 milestone completion and archival
 Resume file: None
 
 ## Project Status
 
-**PROJECT COMPLETE** - Both demo sites are deployed, optimized, tested on real mobile devices, and ready for client delivery.
+**v1.0 SHIPPED** — Both demo sites deployed and ready for client delivery.
+
+**URLs:**
+- Commercial: https://angies-commercial-cleaning.vercel.app
+- Residential: https://angies-residential-cleaning.vercel.app
+
+**Next:** Send to Angie, await response, plan production enhancements if she signs on.
