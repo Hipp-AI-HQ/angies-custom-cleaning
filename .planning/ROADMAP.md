@@ -64,12 +64,14 @@ Plans:
   3. A "Give the Gift of a Clean Home" gift cards section is present with visual gift card designs and pricing tiers -- clearly styled as a showcase, not a working checkout
   4. The site feels like the same company as the commercial site (shared blue brand, same typography, similar layout patterns) but with a distinctly warmer, friendlier tone in copy and visual treatment
   5. The footer contains full contact info, nav links, gift card mention, and "Serving Lancaster & York Counties"
-**Plans**: TBD
+**Plans**: 5 plans
 
 Plans:
-- [ ] 03-01: TBD
-- [ ] 03-02: TBD
-- [ ] 03-03: TBD
+- [ ] 03-01-PLAN.md -- Content & assets preparation (extract residential content, create gift card mockups)
+- [ ] 03-02-PLAN.md -- HTML structure (semantic single-page layout with gift cards section)
+- [ ] 03-03-PLAN.md -- CSS styling (responsive layouts, gift cards section styling)
+- [ ] 03-04-PLAN.md -- JavaScript integration (copy and wire main.js from commercial)
+- [ ] 03-05-PLAN.md -- Verification checkpoint (human visual and functional testing)
 
 ### Phase 4: Polish & Interactivity
 **Goal**: Both sites go from "competent" to "impressive" -- scroll animations, hover effects, and mobile-specific UX touches make the demos feel premium and modern
@@ -111,6 +113,6 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5
 |-------|---------------|--------|-----------|
 | 1. Design System | 2/2 | ✓ Complete | 2026-02-13 |
 | 2. Commercial Site | 5/5 | ✓ Complete | 2026-02-13 |
-| 3. Residential Site | 0/TBD | Not started | - |
+| 3. Residential Site | 0/5 | Not started | - |
 | 4. Polish & Interactivity | 0/TBD | Not started | - |
 | 5. Deployment & Testing | 0/TBD | Not started | - |
