@@ -5,23 +5,23 @@
 See: .planning/PROJECT.md (updated 2026-02-13)
 
 **Core value:** The demos must immediately look better than Angie's current WordPress sites -- faster, cleaner, mobile-friendly, and visually trustworthy -- so she reaches out to move forward.
-**Current focus:** Phase 4 complete. Ready for Phase 5: Deployment & Hosting.
+**Current focus:** Phase 5 in progress. Sites deployed to Vercel.
 
 ## Current Position
 
-Phase: 4 of 5 (Polish & Interactivity) -- COMPLETE
-Plan: 4 of 4 in phase 4 (complete)
-Status: Phase 4 verified. All polish and interactivity features working. Ready for Phase 5.
-Last activity: 2026-02-13 -- Completed phase 4 execution and verification
+Phase: 5 of 5 (Deployment & Testing) -- IN PROGRESS
+Plan: 1 of 1 in phase 5 (complete)
+Status: Both sites deployed to production Vercel URLs. Ready for testing and client delivery.
+Last activity: 2026-02-13 -- Completed 05-01-PLAN.md (Vercel deployment)
 
-Progress: [██████████████] 100% (16/16 plans)
+Progress: [█████████████████] 100% (17/17 plans)
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 16
-- Average duration: 2.2min
-- Total execution time: ~34min
+- Total plans completed: 17
+- Average duration: 2.1min
+- Total execution time: ~35.5min
 
 **By Phase:**
 
@@ -31,10 +31,11 @@ Progress: [██████████████] 100% (16/16 plans)
 | 02-commercial-site | 5/5 | 11min 16sec | 2.3min |
 | 03-residential-site | 5/5 | 8min 29sec | 1.7min |
 | 04-polish-interactivity | 4/4 | ~9min | 2.3min |
+| 05-deployment-testing | 1/1 | 1.4min | 1.4min |
 
 **Recent Trend:**
-- Last 5 plans: 03-05 (<1min), 04-01 (4min), 04-02 (4.3min), 04-03 (3min), 04-04 (<1min)
-- Trend: Excellent velocity, Phase 4 complete with all features verified
+- Last 5 plans: 04-02 (4.3min), 04-03 (3min), 04-04 (<1min), 05-01 (1.4min)
+- Trend: Excellent velocity maintained, deployment streamlined
 
 *Updated after each plan completion*
 
@@ -104,6 +105,11 @@ Recent decisions affecting current work:
 - Component CSS merging: mobile CTA, hover effects, and hamburger menu coexist in components.css
 - Phase 4 human verification checkpoint passed: all scroll animations, mobile CTA, hover effects, and hamburger menu verified working across desktop and mobile viewports
 - Both sites verified polished, performant, accessible, and ready for client demo
+- Vercel project names determine URL subdomains (angies-commercial-cleaning, angies-residential-cleaning)
+- Static site deployment with no build process (pure HTML/CSS/JS served directly)
+- Per-site .vercel directory with deployment metadata excluded from git
+- Commercial site: https://angies-commercial-cleaning.vercel.app
+- Residential site: https://angies-residential-cleaning.vercel.app
 
 ### Pending Todos
 
@@ -115,6 +121,6 @@ None.
 
 ## Session Continuity
 
-Last session: 2026-02-13T08:50:00Z
-Stopped at: Completed Phase 4 execution and verification -- 4/4 plans complete, all polish features verified
+Last session: 2026-02-13T09:08:11Z
+Stopped at: Completed 05-01-PLAN.md -- Both sites deployed to production Vercel URLs
 Resume file: None
