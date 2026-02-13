@@ -1,62 +1,140 @@
 /* ==========================================================================
-   Components
-   Reusable UI components and interactive elements
+   Mobile Hamburger Menu
+   Three-line hamburger icon with X animation on open
    ========================================================================== */
 
-/* ==========================================================================
-   Mobile CTA Bar
-   Fixed call-to-action button at bottom of mobile viewport
-   ========================================================================== */
+.hamburger {
+  display: none; /* Hidden on desktop */
 
-.mobile-cta {
-  /* Hidden by default (desktop) */
-  display: none;
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: var(--space-sm);
+    z-index: var(--z-hamburger);
+    position: relative;
+
+    /* Remove tap highlight */
+    -webkit-tap-highlight-color: transparent;
+  }
 }
 
-/* Mobile only (<= 768px) */
-@media (max-width: 768px) {
-  .mobile-cta {
-    display: block;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: var(--z-mobile-cta);
+.hamburger__line {
+  width: 28px;
+  height: 3px;
+  background-color: var(--color-primary);
+  border-radius: 2px;
+  transition: transform var(--transition-base), opacity var(--transition-fast);
+}
 
-    /* Styling using existing CSS variables */
-    background-color: var(--color-accent);
-    color: var(--color-white);
-    padding: var(--space-md);
-    text-align: center;
+/* Hamburger animation: X transform when menu is open */
+.hamburger[aria-expanded="true"] .hamburger__line:nth-child(1) {
+  transform: translateY(9px) rotate(45deg);
+}
+
+.hamburger[aria-expanded="true"] .hamburger__line:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger[aria-expanded="true"] .hamburger__line:nth-child(3) {
+  transform: translateY(-9px) rotate(-45deg);
+}
+
+/* ==========================================================================
+   Mobile Navigation Slide-In
+   Navigation slides in from right side on mobile
+   ========================================================================== */
+
+/* Desktop: Navigation visible in header (existing behavior) */
+nav {
+  /* Desktop styles remain unchanged */
+}
+
+/* Mobile: Navigation becomes full-screen slide-in */
+@media (max-width: 768px) {
+  nav {
+    position: fixed;
+    top: 0;
+    right: -100%; /* Off-screen by default */
+    width: 280px;
+    max-width: 80vw;
+    height: 100vh;
+    background-color: var(--color-surface);
+    box-shadow: var(--shadow-xl);
+    z-index: var(--z-menu);
+
+    /* Slide animation */
+    transition: right var(--transition-slow);
+
+    /* Overflow */
+    overflow-y: auto;
+
+    /* Padding */
+    padding: var(--space-3xl) var(--space-xl);
+  }
+
+  /* Show navigation when menu is open */
+  nav.is-open {
+    right: 0; /* Slide in */
+  }
+
+  /* Navigation list styling for mobile */
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-lg);
+  }
+
+  nav ul li {
+    margin: 0;
+  }
+
+  nav ul li a {
+    display: block;
+    padding: var(--space-sm) 0;
     font-size: var(--fs-md);
     font-weight: 600;
-    line-height: 1.2;
-
-    /* Shadow for elevation */
-    box-shadow: var(--shadow-lg);
-
-    /* Remove default link styling */
+    color: var(--color-text);
     text-decoration: none;
-
-    /* Safe area for iOS notch */
-    padding-bottom: calc(var(--space-md) + env(safe-area-inset-bottom));
-
-    /* Prevent text selection on tap */
-    user-select: none;
-    -webkit-user-select: none;
-    -webkit-tap-highlight-color: transparent;
-
-    /* Transition for active state */
-    transition: background-color var(--transition-fast);
+    transition: color var(--transition-fast);
   }
 
-  /* Active state (tap feedback) */
-  .mobile-cta:active {
-    background-color: var(--color-accent-hover);
+  nav ul li a:hover,
+  nav ul li a:focus {
+    color: var(--color-primary);
   }
+}
 
-  /* Body padding to prevent mobile CTA from covering footer content */
-  body {
-    padding-bottom: 70px; /* Height of mobile CTA + buffer */
+/* ==========================================================================
+   Navigation Overlay Backdrop
+   Semi-transparent backdrop when mobile menu is open
+   ========================================================================== */
+
+.nav-overlay {
+  display: none;
+
+  @media (max-width: 768px) {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: var(--z-overlay);
+    opacity: 0;
+    transition: opacity var(--transition-base);
+    pointer-events: none;
   }
+}
+
+.nav-overlay.is-visible {
+  display: block;
+  opacity: 1;
+  pointer-events: auto;
 }
