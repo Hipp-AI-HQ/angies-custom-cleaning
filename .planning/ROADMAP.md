@@ -100,11 +100,12 @@ Plans:
   2. Both sites score 90+ on Lighthouse Performance audit (desktop and mobile)
   3. Both sites load, scroll, and function correctly on a real mobile phone -- sticky header works, tap-to-call works, all sections render, no layout breaks
   4. Opening either URL in a browser shows the complete site with no console errors, no broken images, and no missing fonts
-**Plans**: TBD
+**Plans**: 3 plans
 
 Plans:
-- [ ] 05-01: TBD
-- [ ] 05-02: TBD
+- [ ] 05-01-PLAN.md — Deploy both sites to Vercel with clean project names
+- [ ] 05-02-PLAN.md — Run Lighthouse audits and optimize for 90+ Performance scores
+- [ ] 05-03-PLAN.md — Real device testing verification checkpoint
 
 ## Progress
 
@@ -117,4 +118,4 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5
 | 2. Commercial Site | 5/5 | ✓ Complete | 2026-02-13 |
 | 3. Residential Site | 5/5 | ✓ Complete | 2026-02-13 |
 | 4. Polish & Interactivity | 4/4 | ✓ Complete | 2026-02-13 |
-| 5. Deployment & Testing | 0/TBD | Not started | - |
+| 5. Deployment & Testing | 0/3 | Not started | - |
