@@ -1,0 +1,62 @@
+/* ==========================================================================
+   Components
+   Reusable UI components and interactive elements
+   ========================================================================== */
+
+/* ==========================================================================
+   Mobile CTA Bar
+   Fixed call-to-action button at bottom of mobile viewport
+   ========================================================================== */
+
+.mobile-cta {
+  /* Hidden by default (desktop) */
+  display: none;
+}
+
+/* Mobile only (<= 768px) */
+@media (max-width: 768px) {
+  .mobile-cta {
+    display: block;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: var(--z-mobile-cta);
+
+    /* Styling using existing CSS variables */
+    background-color: var(--color-accent);
+    color: var(--color-white);
+    padding: var(--space-md);
+    text-align: center;
+    font-size: var(--fs-md);
+    font-weight: 600;
+    line-height: 1.2;
+
+    /* Shadow for elevation */
+    box-shadow: var(--shadow-lg);
+
+    /* Remove default link styling */
+    text-decoration: none;
+
+    /* Safe area for iOS notch */
+    padding-bottom: calc(var(--space-md) + env(safe-area-inset-bottom));
+
+    /* Prevent text selection on tap */
+    user-select: none;
+    -webkit-user-select: none;
+    -webkit-tap-highlight-color: transparent;
+
+    /* Transition for active state */
+    transition: background-color var(--transition-fast);
+  }
+
+  /* Active state (tap feedback) */
+  .mobile-cta:active {
+    background-color: var(--color-accent-hover);
+  }
+
+  /* Body padding to prevent mobile CTA from covering footer content */
+  body {
+    padding-bottom: 70px; /* Height of mobile CTA + buffer */
+  }
+}
