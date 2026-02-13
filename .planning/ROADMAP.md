@@ -29,11 +29,11 @@ Decimal phases appear between their surrounding integers in numeric order.
   2. A test HTML file using the shared CSS renders correctly at 375px, 768px, and 1024px+ widths with visibly different layouts at each breakpoint
   3. Google Fonts load with no flash of unstyled text (preconnect + font-display swap working)
   4. The color palette feels warm and trustworthy -- blue primary, warm white backgrounds, warm orange accent -- not cold or corporate
-**Plans**: TBD
+**Plans**: 2 plans
 
 Plans:
-- [ ] 01-01: TBD
-- [ ] 01-02: TBD
+- [ ] 01-01-PLAN.md -- Create shared CSS files (reset, variables, base, utilities)
+- [ ] 01-02-PLAN.md -- Create test HTML page and copy CSS to both site directories
 
 ### Phase 2: Commercial Site
 **Goal**: A visitor landing on the commercial site sees a polished, complete single-page experience -- Angie's real services, real awards, real story -- and can find the phone number and contact information within seconds on any device
@@ -107,7 +107,7 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5
 
 | Phase | Plans Complete | Status | Completed |
 |-------|---------------|--------|-----------|
-| 1. Design System | 0/TBD | Not started | - |
+| 1. Design System | 0/2 | Planned | - |
 | 2. Commercial Site | 0/TBD | Not started | - |
 | 3. Residential Site | 0/TBD | Not started | - |
 | 4. Polish & Interactivity | 0/TBD | Not started | - |
