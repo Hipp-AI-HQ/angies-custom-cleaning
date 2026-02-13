@@ -11,6 +11,10 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
 
+  <!-- Preconnect to CDN origins for performance -->
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+
   <!-- AOS (Animate On Scroll) library -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
 
@@ -76,11 +80,11 @@
         <div class="trust-badges">
           <picture>
             <source srcset="images/awards/angies-list.webp" type="image/webp">
-            <img src="images/awards/angies-list.png" alt="Angie's List Super Service Award 2017" width="120" height="120">
+            <img src="images/awards/angies-list.png" alt="Angie's List Super Service Award 2017" width="120" height="120" loading="lazy">
           </picture>
           <picture>
             <source srcset="images/awards/readers-choice.webp" type="image/webp">
-            <img src="images/awards/readers-choice.jpg" alt="Lancaster Newspaper Readers' Choice 2019" width="120" height="120">
+            <img src="images/awards/readers-choice.jpg" alt="Lancaster Newspaper Readers' Choice 2019" width="120" height="120" loading="lazy">
           </picture>
         </div>
       </div>
@@ -357,7 +361,7 @@
         <div class="footer__brand">
           <picture>
             <source srcset="images/logo.webp" type="image/webp">
-            <img src="images/logo.png" alt="Angie's Custom Cleaning" width="180" height="72">
+            <img src="images/logo.png" alt="Angie's Custom Cleaning" width="180" height="72" loading="lazy">
           </picture>
           <p class="footer__tagline">Lancaster County's award-winning commercial cleaning service since 2012</p>
         </div>
@@ -406,13 +410,13 @@
   </a>
 
   <!-- CountUp.js for statistics animation -->
-  <script src="https://cdn.jsdelivr.net/npm/countup@2.8.0/dist/countUp.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/countup@2.8.0/dist/countUp.min.js" defer></script>
 
   <!-- AOS library -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" defer></script>
 
   <!-- Site JavaScript -->
-  <script src="js/main.js"></script>
+  <script src="js/main.js" defer></script>
 
 </body>
 </html>
