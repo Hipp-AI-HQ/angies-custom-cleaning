@@ -90,4 +90,12 @@
   --transition-fast: 150ms ease;
   --transition-base: 250ms ease;
   --transition-slow: 400ms ease;
+
+  /* ---- Z-Index Scale ---- */
+
+  --z-header: 100;
+  --z-overlay: 999;
+  --z-menu: 1000;
+  --z-mobile-cta: 1000;
+  --z-hamburger: 1001;
 }
