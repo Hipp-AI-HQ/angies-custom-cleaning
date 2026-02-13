@@ -90,3 +90,24 @@ ul, ol {
 li {
   margin-bottom: var(--space-xs);
 }
+
+/* ==========================================================================
+   Smooth Scroll Behavior
+   ========================================================================== */
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Accessibility: Respect reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  /* Disable AOS animations for users with motion sensitivity */
+  [data-aos] {
+    animation: none !important;
+    transition: none !important;
+  }
+}

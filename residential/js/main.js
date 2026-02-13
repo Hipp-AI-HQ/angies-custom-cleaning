@@ -148,3 +148,59 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   });
 });
+
+/**
+ * Initialize AOS (Animate On Scroll) library
+ * Fade-up animations triggered on scroll into view
+ */
+document.addEventListener('DOMContentLoaded', function() {
+  AOS.init({
+    // Animation settings
+    duration: 600,           // Duration (ms) - keep short for snappy feel
+    easing: 'ease-out',      // Easing function
+    once: true,              // Animate only once (performance + UX)
+
+    // Trigger settings
+    offset: 50,              // Offset from viewport (px) - lower for mobile
+    delay: 0,                // Global delay (use data-aos-delay for per-element)
+
+    // Behavior
+    disable: false,          // Never disable on mobile
+    mirror: false,           // Don't animate out on scroll up
+    anchorPlacement: 'top-bottom', // When top of element hits bottom of viewport
+  });
+});
+
+/**
+ * Smooth scroll enhancement for anchor links
+ * Handles navigation links to same-page sections
+ */
+document.addEventListener('DOMContentLoaded', function() {
+  const anchorLinks = document.querySelectorAll('a[href^="#"]');
+
+  anchorLinks.forEach(link => {
+    link.addEventListener('click', function(e) {
+      const targetId = this.getAttribute('href');
+
+      // Ignore empty hash or hash-only
+      if (targetId === '#' || targetId === '#!') return;
+
+      const targetElement = document.querySelector(targetId);
+
+      if (targetElement) {
+        e.preventDefault();
+
+        // Smooth scroll to target
+        targetElement.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start'
+        });
+
+        // Update URL without jump
+        if (history.pushState) {
+          history.pushState(null, '', targetId);
+        }
+      }
+    });
+  });
+});
