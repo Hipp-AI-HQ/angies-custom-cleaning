@@ -1,0 +1,200 @@
+/* ==========================================================================
+   Commercial Site Styles
+   Site-specific component styles using design system variables
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   Header & Navigation
+   -------------------------------------------------------------------------- */
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: var(--color-surface);
+  box-shadow: var(--shadow-sm);
+  padding: var(--space-md) 0;
+}
+
+.site-header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--space-lg);
+}
+
+.logo img {
+  height: 48px;
+  width: auto;
+}
+
+nav ul {
+  display: none; /* Hidden on mobile, hamburger menu in Phase 4 */
+  list-style: none;
+  gap: var(--space-lg);
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  color: var(--color-text);
+  text-decoration: none;
+  font-weight: 600;
+  transition: color var(--transition-base);
+}
+
+nav a:hover {
+  color: var(--color-primary);
+}
+
+/* Tap-to-call phone link - prominent button on mobile */
+.phone-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-xs);
+  min-height: 48px;
+  padding: var(--space-sm) var(--space-md);
+  background-color: var(--color-accent);
+  color: var(--color-white);
+  border-radius: var(--radius-md);
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color var(--transition-base);
+  white-space: nowrap;
+}
+
+.phone-link:hover {
+  background-color: var(--color-accent-hover);
+}
+
+@media (min-width: 768px) {
+  nav ul {
+    display: flex; /* Show nav on tablet+ */
+  }
+
+  .phone-link {
+    background-color: transparent;
+    color: var(--color-primary);
+    padding: var(--space-xs) var(--space-sm);
+  }
+
+  .phone-link:hover {
+    background-color: transparent;
+    color: var(--color-primary-light);
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Hero Section
+   -------------------------------------------------------------------------- */
+
+.hero {
+  background: linear-gradient(135deg, var(--color-primary-light) 0%, var(--color-primary) 100%);
+  color: var(--color-white);
+  text-align: center;
+  padding: var(--space-4xl) 0;
+}
+
+.hero h1 {
+  font-size: var(--fs-xxl);
+  font-weight: 800;
+  margin-bottom: var(--space-md);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  line-height: var(--line-height-heading);
+}
+
+.hero__subtitle {
+  font-size: var(--fs-lg);
+  margin-bottom: var(--space-2xl);
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: var(--line-height-body);
+}
+
+.hero__ctas {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  align-items: center;
+  margin-bottom: var(--space-2xl);
+}
+
+@media (min-width: 768px) {
+  .hero__ctas {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+.trust-badges {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--space-lg);
+  flex-wrap: wrap;
+  margin-top: var(--space-xl);
+}
+
+.trust-badges img {
+  max-width: 80px;
+  height: auto;
+  filter: brightness(0) invert(1); /* White icons on dark blue background */
+}
+
+@media (min-width: 1024px) {
+  .trust-badges img {
+    max-width: 120px;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Buttons
+   -------------------------------------------------------------------------- */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-md) var(--space-xl);
+  font-size: var(--fs-base);
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: var(--radius-md);
+  transition: all var(--transition-base);
+  cursor: pointer;
+  border: none;
+  min-height: 48px;
+  font-family: var(--font-body);
+}
+
+.btn--primary {
+  background-color: var(--color-accent);
+  color: var(--color-white);
+}
+
+.btn--primary:hover {
+  background-color: var(--color-accent-hover);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.btn--secondary {
+  background-color: var(--color-surface);
+  color: var(--color-primary);
+  border: 2px solid var(--color-surface);
+}
+
+.btn--secondary:hover {
+  background-color: transparent;
+  border-color: var(--color-surface);
+  color: var(--color-surface);
+  transform: translateY(-2px);
+}
+
+.btn--large {
+  padding: var(--space-lg) var(--space-2xl);
+  font-size: var(--fs-md);
+}
