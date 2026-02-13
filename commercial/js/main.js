@@ -76,3 +76,75 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 });
+
+/**
+ * Mobile Hamburger Menu
+ * Toggle slide-in navigation with full accessibility support
+ */
+document.addEventListener('DOMContentLoaded', function() {
+  const hamburger = document.querySelector('.hamburger');
+  const nav = document.querySelector('nav');
+  const navLinks = document.querySelectorAll('nav a');
+
+  // Exit if elements not found
+  if (!hamburger || !nav) {
+    console.warn('Hamburger menu elements not found');
+    return;
+  }
+
+  // Create overlay backdrop
+  const overlay = document.createElement('div');
+  overlay.className = 'nav-overlay';
+  document.body.appendChild(overlay);
+
+  /**
+   * Toggle mobile menu open/closed
+   */
+  function toggleMenu() {
+    const isOpen = hamburger.getAttribute('aria-expanded') === 'true';
+
+    // Update ARIA state
+    hamburger.setAttribute('aria-expanded', !isOpen);
+
+    // Toggle classes
+    nav.classList.toggle('is-open');
+    overlay.classList.toggle('is-visible');
+
+    // Prevent body scroll when menu is open
+    document.body.style.overflow = !isOpen ? 'hidden' : '';
+
+    // Focus management
+    if (!isOpen) {
+      // Opening menu: focus first link after animation
+      const firstLink = nav.querySelector('a');
+      if (firstLink) {
+        setTimeout(() => firstLink.focus(), 300);
+      }
+    } else {
+      // Closing menu: return focus to hamburger
+      hamburger.focus();
+    }
+  }
+
+  // Event: Hamburger button click
+  hamburger.addEventListener('click', toggleMenu);
+
+  // Event: Nav link click (close menu after selecting)
+  navLinks.forEach(link => {
+    link.addEventListener('click', function() {
+      if (nav.classList.contains('is-open')) {
+        toggleMenu();
+      }
+    });
+  });
+
+  // Event: Overlay click (close menu)
+  overlay.addEventListener('click', toggleMenu);
+
+  // Event: Escape key (close menu)
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape' && nav.classList.contains('is-open')) {
+      toggleMenu();
+    }
+  });
+});
