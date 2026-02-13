@@ -86,32 +86,198 @@ nav a:hover {
 }
 
 /* --------------------------------------------------------------------------
-   Hero Section
+   Hero Section — Animated Lamp Effect
+   Pure CSS adaptation of shadcn lamp hero (blue + gold brand colors)
    -------------------------------------------------------------------------- */
 
+/* Keyframe animations */
+@keyframes lamp-beam-expand {
+  from { width: 8rem; }
+  to { width: 16rem; }
+}
+
+@keyframes lamp-line-expand {
+  from { width: 15rem; }
+  to { width: 30rem; }
+}
+
+@keyframes lamp-cone-expand {
+  from { opacity: 0.5; width: 15rem; }
+  to { opacity: 1; width: 30rem; }
+}
+
+@keyframes hero-content-rise {
+  from { transform: translateY(60px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
 .hero {
-  background: linear-gradient(135deg, var(--color-primary-light) 0%, var(--color-primary) 100%);
+  position: relative;
+  z-index: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+  width: 100%;
+  overflow: hidden;
+  background-color: var(--color-primary-dark);
   color: var(--color-white);
   text-align: center;
   padding: var(--space-4xl) 0;
 }
 
+/* ---- Lamp glow container ---- */
+.hero__lamp {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  z-index: 0;
+  isolation: isolate;
+}
+
+/* Frosted blur at very top */
+.hero__lamp-blur {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 48px;
+  z-index: 50;
+  background: transparent;
+  opacity: 0.1;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+/* Main glow orb */
+.hero__lamp-glow {
+  position: absolute;
+  z-index: 50;
+  width: 28rem;
+  height: 9rem;
+  top: 0;
+  transform: translateY(-30%);
+  border-radius: 9999px;
+  background: rgba(197, 150, 31, 0.5);
+  opacity: 0.8;
+  filter: blur(48px);
+}
+
+/* Animated beam (narrower glow) */
+.hero__lamp-beam {
+  position: absolute;
+  top: 0;
+  z-index: 30;
+  height: 9rem;
+  transform: translateY(-20%);
+  border-radius: 9999px;
+  background: rgba(197, 150, 31, 0.5);
+  filter: blur(32px);
+  animation: lamp-beam-expand 0.8s 0.3s ease-in-out both;
+}
+
+/* Horizontal light line */
+.hero__lamp-line {
+  position: absolute;
+  z-index: 50;
+  height: 2px;
+  top: 0;
+  transform: translateY(-10%);
+  background: rgba(197, 150, 31, 0.6);
+  animation: lamp-line-expand 0.8s 0.3s ease-in-out both;
+}
+
+/* ---- Conic gradient cones ---- */
+.hero__lamp-cone {
+  position: absolute;
+  top: 0;
+  height: 14rem;
+  overflow: visible;
+  animation: lamp-cone-expand 0.8s 0.3s ease-in-out both;
+}
+
+.hero__lamp-cone--left {
+  right: 50%;
+  background: conic-gradient(from 70deg at center top, rgba(197, 150, 31, 0.5), transparent, transparent);
+}
+
+.hero__lamp-cone--right {
+  left: 50%;
+  background: conic-gradient(from 290deg at center top, transparent, transparent, rgba(197, 150, 31, 0.5));
+}
+
+/* Masks to fade edges of cones */
+.hero__lamp-cone-mask-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 10rem;
+  z-index: 20;
+  background: var(--color-primary-dark);
+  mask-image: linear-gradient(to top, white, transparent);
+  -webkit-mask-image: linear-gradient(to top, white, transparent);
+}
+
+.hero__lamp-cone--left .hero__lamp-cone-mask-side {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 10rem;
+  z-index: 20;
+  background: var(--color-primary-dark);
+  mask-image: linear-gradient(to right, white, transparent);
+  -webkit-mask-image: linear-gradient(to right, white, transparent);
+}
+
+.hero__lamp-cone--right .hero__lamp-cone-mask-side {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 10rem;
+  z-index: 20;
+  background: var(--color-primary-dark);
+  mask-image: linear-gradient(to left, white, transparent);
+  -webkit-mask-image: linear-gradient(to left, white, transparent);
+}
+
+/* ---- Hero content ---- */
+.hero__content {
+  position: relative;
+  z-index: 50;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-md);
+  padding: 0 var(--space-md);
+  animation: hero-content-rise 0.8s 0.5s ease-in-out both;
+}
+
 .hero h1 {
   font-size: var(--fs-xxl);
   font-weight: 800;
-  margin-bottom: var(--space-md);
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
+  margin-bottom: var(--space-sm);
+  letter-spacing: -0.02em;
   line-height: var(--line-height-heading);
+  background: linear-gradient(to right, var(--color-white), var(--color-accent-light));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .hero__subtitle {
   font-size: var(--fs-lg);
-  margin-bottom: var(--space-2xl);
+  margin-bottom: var(--space-xl);
   max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
   line-height: var(--line-height-body);
+  color: rgba(255, 255, 255, 0.8);
 }
 
 .hero__ctas {
@@ -119,7 +285,7 @@ nav a:hover {
   flex-direction: column;
   gap: var(--space-md);
   align-items: center;
-  margin-bottom: var(--space-2xl);
+  margin-bottom: var(--space-xl);
 }
 
 @media (min-width: 768px) {
@@ -129,24 +295,51 @@ nav a:hover {
   }
 }
 
+/* Outline button variant for hero */
+.btn--outline {
+  background-color: transparent;
+  color: var(--color-white);
+  border: 2px solid rgba(255, 255, 255, 0.4);
+}
+
+.btn--outline:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.7);
+  transform: translateY(-2px);
+}
+
 .trust-badges {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: var(--space-lg);
   flex-wrap: wrap;
-  margin-top: var(--space-xl);
+  margin-top: var(--space-lg);
 }
 
 .trust-badges img {
   max-width: 80px;
   height: auto;
-  filter: brightness(0) invert(1); /* White icons on dark blue background */
+  border-radius: var(--radius-md);
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 4px;
 }
 
 @media (min-width: 1024px) {
   .trust-badges img {
     max-width: 120px;
+  }
+}
+
+/* Scale down lamp effect on mobile */
+@media (max-width: 768px) {
+  .hero__lamp-glow {
+    width: 16rem;
+    height: 6rem;
+  }
+
+  .hero {
+    min-height: 70vh;
   }
 }
 

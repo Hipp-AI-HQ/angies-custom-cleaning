@@ -66,14 +66,31 @@
   <!-- Main content landmark -->
   <main>
 
-    <!-- Hero section -->
+    <!-- Hero section with animated lamp effect -->
     <section id="hero" class="hero section">
-      <div class="container">
+      <!-- Lamp glow effect -->
+      <div class="hero__lamp">
+        <div class="hero__lamp-blur"></div>
+        <div class="hero__lamp-glow"></div>
+        <div class="hero__lamp-beam"></div>
+        <div class="hero__lamp-line"></div>
+        <div class="hero__lamp-cone hero__lamp-cone--left">
+          <div class="hero__lamp-cone-mask-bottom"></div>
+          <div class="hero__lamp-cone-mask-side"></div>
+        </div>
+        <div class="hero__lamp-cone hero__lamp-cone--right">
+          <div class="hero__lamp-cone-mask-bottom"></div>
+          <div class="hero__lamp-cone-mask-side"></div>
+        </div>
+      </div>
+
+      <!-- Hero content -->
+      <div class="hero__content container">
         <h1>Maintaining Your Clean Legacy</h1>
         <p class="hero__subtitle">Background-checked, insured professionals delivering superior office cleaning at ultra-competitive prices</p>
         <div class="hero__ctas">
           <a href="#contact" class="btn btn--primary btn--large">Get a Free Estimate</a>
-          <a href="tel:+17176150968" class="btn btn--secondary btn--large">Call Now: 717-615-0968</a>
+          <a href="tel:+17176150968" class="btn btn--outline btn--large">Call Now: 717-615-0968</a>
         </div>
 
         <!-- Trust badge strip -->

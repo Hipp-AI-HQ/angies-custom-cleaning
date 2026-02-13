@@ -13,10 +13,10 @@
   --color-primary-50: #E6F2F8;       /* Very light blue -- subtle backgrounds, highlights */
   --color-primary-100: #B3D9EA;      /* Light blue -- borders, dividers */
 
-  /* Accent: Warm orange (complementary to blue on color wheel) */
-  --color-accent: #E67E22;           /* CTAs, highlights, call-to-action buttons */
-  --color-accent-hover: #D35400;     /* Hover state for accent */
-  --color-accent-light: #FDEBD0;     /* Light accent for badge backgrounds */
+  /* Accent: Brand gold (from logo diamond) */
+  --color-accent: #C5961F;           /* CTAs, highlights, call-to-action buttons */
+  --color-accent-hover: #A67C1A;     /* Hover state for accent */
+  --color-accent-light: #FDF3DC;     /* Light accent for badge backgrounds */
 
   /* Backgrounds: Warm whites (NOT pure #FFF) */
   --color-bg: #FDFAF6;              /* Primary background -- warm cream-white */
