@@ -85,11 +85,11 @@
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| DSGN-01 | Phase 1 | Pending |
-| DSGN-02 | Phase 1 | Pending |
-| DSGN-03 | Phase 1 | Pending |
-| DSGN-04 | Phase 1 | Pending |
-| DSGN-05 | Phase 1 | Pending |
+| DSGN-01 | Phase 1 | Complete |
+| DSGN-02 | Phase 1 | Complete |
+| DSGN-03 | Phase 1 | Complete |
+| DSGN-04 | Phase 1 | Complete |
+| DSGN-05 | Phase 1 | Complete |
 | COMM-01 | Phase 2 | Pending |
 | COMM-02 | Phase 2 | Pending |
 | COMM-03 | Phase 2 | Pending |
