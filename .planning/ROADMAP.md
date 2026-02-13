@@ -45,12 +45,14 @@ Plans:
   3. The statistics strip shows real numbers (years in business, awards won) and the trust badges (Angie's List, Readers' Choice, Super Service Award) are visible within the first scroll
   4. The site looks and functions correctly across mobile (375px), tablet (768px), and desktop (1024px+) -- no broken layouts, no horizontal scroll, no overlapping elements
   5. The footer contains full contact info (phone, address, hours), navigation links, and "Serving Lancaster County, PA"
-**Plans**: TBD
+**Plans**: 5 plans
 
 Plans:
-- [ ] 02-01: TBD
-- [ ] 02-02: TBD
-- [ ] 02-03: TBD
+- [ ] 02-01-PLAN.md -- Content & assets preparation (extract images, create content document)
+- [ ] 02-02-PLAN.md -- HTML structure (semantic single-page layout with all sections)
+- [ ] 02-03-PLAN.md -- CSS styling (responsive layouts, design system integration)
+- [ ] 02-04-PLAN.md -- JavaScript enhancements (statistics animation, form handling)
+- [ ] 02-05-PLAN.md -- Verification checkpoint (human visual and functional testing)
 
 ### Phase 3: Residential Site
 **Goal**: A visitor landing on the residential site gets the same quality and polish as the commercial site but with a warmer, home-focused tone -- plus a gift cards section that acknowledges this feature without requiring e-commerce
@@ -108,7 +110,7 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5
 | Phase | Plans Complete | Status | Completed |
 |-------|---------------|--------|-----------|
 | 1. Design System | 2/2 | ✓ Complete | 2026-02-13 |
-| 2. Commercial Site | 0/TBD | Not started | - |
+| 2. Commercial Site | 0/5 | Not started | - |
 | 3. Residential Site | 0/TBD | Not started | - |
 | 4. Polish & Interactivity | 0/TBD | Not started | - |
 | 5. Deployment & Testing | 0/TBD | Not started | - |
