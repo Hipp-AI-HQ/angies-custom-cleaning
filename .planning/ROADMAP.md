@@ -14,7 +14,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 
 - [x] **Phase 1: Design System** - Shared brand foundation (CSS variables, typography, responsive grid) used by both sites
 - [x] **Phase 2: Commercial Site** - Complete single-page commercial cleaning site with all sections
-- [ ] **Phase 3: Residential Site** - Complete single-page residential cleaning site with gift cards section
+- [x] **Phase 3: Residential Site** - Complete single-page residential cleaning site with gift cards section
 - [ ] **Phase 4: Polish & Interactivity** - Scroll animations, hover effects, mobile CTA bar, hamburger menu
 - [ ] **Phase 5: Deployment & Testing** - Vercel deployment, Lighthouse audits, real-device mobile testing
 
@@ -67,11 +67,11 @@ Plans:
 **Plans**: 5 plans
 
 Plans:
-- [ ] 03-01-PLAN.md -- Content & assets preparation (extract residential content, create gift card mockups)
-- [ ] 03-02-PLAN.md -- HTML structure (semantic single-page layout with gift cards section)
-- [ ] 03-03-PLAN.md -- CSS styling (responsive layouts, gift cards section styling)
-- [ ] 03-04-PLAN.md -- JavaScript integration (copy and wire main.js from commercial)
-- [ ] 03-05-PLAN.md -- Verification checkpoint (human visual and functional testing)
+- [x] 03-01-PLAN.md -- Content & assets preparation (extract residential content, create gift card mockups)
+- [x] 03-02-PLAN.md -- HTML structure (semantic single-page layout with gift cards section)
+- [x] 03-03-PLAN.md -- CSS styling (responsive layouts, gift cards section styling)
+- [x] 03-04-PLAN.md -- JavaScript integration (copy and wire main.js from commercial)
+- [x] 03-05-PLAN.md -- Verification checkpoint (human visual and functional testing)
 
 ### Phase 4: Polish & Interactivity
 **Goal**: Both sites go from "competent" to "impressive" -- scroll animations, hover effects, and mobile-specific UX touches make the demos feel premium and modern
@@ -113,6 +113,6 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5
 |-------|---------------|--------|-----------|
 | 1. Design System | 2/2 | ✓ Complete | 2026-02-13 |
 | 2. Commercial Site | 5/5 | ✓ Complete | 2026-02-13 |
-| 3. Residential Site | 0/5 | Not started | - |
+| 3. Residential Site | 5/5 | ✓ Complete | 2026-02-13 |
 | 4. Polish & Interactivity | 0/TBD | Not started | - |
 | 5. Deployment & Testing | 0/TBD | Not started | - |
