@@ -10,18 +10,18 @@ See: .planning/PROJECT.md (updated 2026-02-13)
 ## Current Position
 
 Phase: 4 of 5 (Polish & Interactivity) -- IN PROGRESS
-Plan: 1 of 5 in phase 4
-Status: Phase 4 in progress. Scroll animations complete.
-Last activity: 2026-02-13 -- Completed 04-01-PLAN.md (Scroll animations)
+Plan: 2 of 5 in phase 4
+Status: Phase 4 in progress. Mobile CTA and hover effects complete.
+Last activity: 2026-02-13 -- Completed 04-02-PLAN.md (Mobile CTA & hover effects)
 
-Progress: [############] 92% (13/14 plans)
+Progress: [#############] 100% (14/14 plans)
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 13
-- Average duration: 2.0min
-- Total execution time: 28min 45sec
+- Total plans completed: 14
+- Average duration: 2.1min
+- Total execution time: 33min 4sec
 
 **By Phase:**
 
@@ -30,11 +30,11 @@ Progress: [############] 92% (13/14 plans)
 | 01-design-system | 2/2 | 5min | 2.5min |
 | 02-commercial-site | 5/5 | 11min 16sec | 2.3min |
 | 03-residential-site | 5/5 | 8min 29sec | 1.7min |
-| 04-polish-interactivity | 1/5 | 4min | 4.0min |
+| 04-polish-interactivity | 2/5 | 8min 19sec | 4.2min |
 
 **Recent Trend:**
-- Last 5 plans: 03-02 (2.1min), 03-03 (1.9min), 03-04 (<1min), 03-05 (<1min), 04-01 (4min)
-- Trend: Excellent velocity, Phase 4 started with 4min plan
+- Last 5 plans: 03-03 (1.9min), 03-04 (<1min), 03-05 (<1min), 04-01 (4min), 04-02 (4.3min)
+- Trend: Good velocity, Phase 4 averaging 4.2min per plan
 
 *Updated after each plan completion*
 
@@ -94,6 +94,14 @@ Recent decisions affecting current work:
 - fade-up only animation (single consistent effect more professional than variety)
 - Smooth scrolling via CSS scroll-behavior + JavaScript scrollIntoView enhancement
 - prefers-reduced-motion media query disables all AOS animations for accessibility
+- Mobile CTA uses z-index: 1000 to appear above all content except hamburger menu (1001)
+- Hover effects use translateY transforms for GPU acceleration (better than top/bottom properties)
+- Desktop-only hover via @media (hover: hover) prevents sticky hover on mobile touch devices
+- Button lifts 4px on hover, service cards lift 8px for visual hierarchy differentiation
+- Body padding-bottom: 70px on mobile prevents CTA from covering footer content
+- Z-index scale pattern: header (100) → overlay (999) → menu/mobile-cta (1000) → hamburger (1001)
+- Hover shadow optimization: pre-render on ::after pseudo-element, animate opacity only
+- Component CSS merging: mobile CTA, hover effects, and hamburger menu coexist in components.css
 
 ### Pending Todos
 
@@ -105,6 +113,6 @@ None.
 
 ## Session Continuity
 
-Last session: 2026-02-13T08:39:29Z
-Stopped at: Completed 04-01-PLAN.md (Scroll animations) -- Phase 4 in progress, 1 of 5 plans done
+Last session: 2026-02-13T08:39:40Z
+Stopped at: Completed 04-02-PLAN.md (Mobile CTA & hover effects) -- Phase 4 in progress, 2 of 5 plans done
 Resume file: None
