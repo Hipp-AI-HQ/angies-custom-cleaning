@@ -5,7 +5,7 @@
 See: .planning/PROJECT.md (updated 2026-02-13)
 
 **Core value:** The demos must immediately look better than Angie's current WordPress sites -- faster, cleaner, mobile-friendly, and visually trustworthy -- so she reaches out to move forward.
-**Current focus:** Phase 2 complete. Ready for Phase 3: Residential Site.
+**Current focus:** Phase 3 complete. Ready for Phase 4: Polish & Interactivity.
 
 ## Current Position
 
