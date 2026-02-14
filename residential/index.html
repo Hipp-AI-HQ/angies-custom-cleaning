@@ -25,6 +25,8 @@
   <link rel="stylesheet" href="css/utilities.css">
   <link rel="stylesheet" href="css/residential.css">
   <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/aurora.css">
+  <link rel="stylesheet" href="css/awards-slider.css">
 </head>
 <body>
 
@@ -67,22 +69,11 @@
   <!-- Main content landmark -->
   <main>
 
-    <!-- Hero section with animated lamp effect -->
-    <section id="hero" class="hero section">
-      <!-- Lamp glow effect -->
-      <div class="hero__lamp">
-        <div class="hero__lamp-blur"></div>
-        <div class="hero__lamp-glow"></div>
-        <div class="hero__lamp-beam"></div>
-        <div class="hero__lamp-line"></div>
-        <div class="hero__lamp-cone hero__lamp-cone--left">
-          <div class="hero__lamp-cone-mask-bottom"></div>
-          <div class="hero__lamp-cone-mask-side"></div>
-        </div>
-        <div class="hero__lamp-cone hero__lamp-cone--right">
-          <div class="hero__lamp-cone-mask-bottom"></div>
-          <div class="hero__lamp-cone-mask-side"></div>
-        </div>
+    <!-- Hero section with aurora background -->
+    <section id="hero" class="hero hero--aurora section">
+      <!-- Aurora background effect -->
+      <div class="aurora-background">
+        <div class="aurora-gradient aurora-gradient--spotlight"></div>
       </div>
 
       <!-- Hero content -->
@@ -94,16 +85,34 @@
           <a href="tel:+17176150968" class="btn btn--outline btn--large">Call Now: 717-615-0968</a>
         </div>
 
-        <!-- Trust badge strip -->
-        <div class="trust-badges">
-          <picture>
-            <source srcset="images/awards/angies-list.webp" type="image/webp">
-            <img src="images/awards/angies-list.png" alt="Angie's List Super Service Award 2017" width="120" height="120" loading="lazy">
-          </picture>
-          <picture>
-            <source srcset="images/awards/readers-choice.webp" type="image/webp">
-            <img src="images/awards/readers-choice.jpg" alt="Lancaster Newspaper Readers' Choice 2019" width="120" height="120" loading="lazy">
-          </picture>
+        <!-- Awards infinite slider -->
+        <div class="hero-awards-slider">
+          <div class="awards-slider__track">
+            <div class="awards-slider__item">
+              <img src="images/awards/angies-list-2013.png" alt="Angie's List Super Service Award 2013">
+            </div>
+            <div class="awards-slider__item">
+              <img src="images/awards/angies-list-2014.png" alt="Angie's List Super Service Award 2014">
+            </div>
+            <div class="awards-slider__item">
+              <img src="images/awards/angies-list-2015.png" alt="Angie's List Super Service Award 2015">
+            </div>
+            <div class="awards-slider__item">
+              <img src="images/awards/angies-list-2016.png" alt="Angie's List Super Service Award 2016">
+            </div>
+            <div class="awards-slider__item">
+              <img src="images/awards/angies-list-2017.png" alt="Angie's List Super Service Award 2017">
+            </div>
+            <div class="awards-slider__item">
+              <img src="images/awards/readers-choice-favorite.png" alt="Readers' Choice Voted A Favorite">
+            </div>
+            <div class="awards-slider__item">
+              <img src="images/awards/readers-choice-2017.png" alt="Readers' Choice Award 2017">
+            </div>
+            <div class="awards-slider__item">
+              <img src="images/awards/readers-choice-2019.png" alt="Readers' Choice Award 2019">
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -521,6 +530,9 @@
 
   <!-- Site JavaScript -->
   <script src="js/main.js" defer></script>
+
+  <!-- Awards Slider -->
+  <script src="js/awards-slider.js" defer></script>
 
 </body>
 </html>
