@@ -1,43 +1,51 @@
-# Agent Instructions
+# Angie's Custom Cleaning — Demo Websites
 
-## Project Overview
+Demo websites for Angie's Custom Cleaning (Lancaster, PA). Two static sites built with vanilla HTML/CSS/JS to demonstrate web development capability to a prospective client.
 
-Demo websites for Angie's Custom Cleaning (Lancaster, PA). Two sites being rebuilt as modern static sites to demonstrate capability to a prospective client. These are **demos** — prioritize visual impact, speed, and polish over feature completeness.
+## Quick Reference
 
-## Sites
-
-| Site | Current Domain | Directory | Purpose |
-|------|---------------|-----------|---------|
+| Site | Domain | Directory | Purpose |
+|------|--------|-----------|---------|
 | Commercial | angiescommercialcleaning.com | `commercial/` | Commercial cleaning services |
 | Residential | angiescustomcleaning.com | `residential/` | Residential cleaning + gift cards |
 
-## Session Initialization
+## Project Rules
 
-1. Read CLAUDE.md (this file)
+**See `.claude/rules/` for all project guidelines:**
+
+- **`technical-defaults.md`** — Architecture, CSS system, browser support, deployment workflow
+- **`design-rules.md`** — Brand guidelines (colors, typography), demo quality standards, content guidelines
+- **`workflow.md`** — Design iteration (screenshot → review → fix → repeat), session init, commit process
+- **`skills-guide.md`** — Available skills (`/frontend-design`, `/ux-researcher-designer`, etc.) and when to use them
+
+## Session Start
+
+1. Read CLAUDE.md (this file) — You're doing it now ✓
 2. Read PROJECT.md (current state, decisions, what's been done)
+3. Check git status for uncommitted changes
+4. Confirm which site you're working on (`commercial/` or `residential/`)
 
-## Principles
+## Key Principles
 
-1. **Read PROJECT.md before building** — Check current state and what's been decided. Don't duplicate completed work.
-
-2. **One site at a time** — Focus on `commercial/` or `residential/` in each work session. Don't mix changes across sites in the same commit unless they share a component.
-
-3. **Demo quality** — These sites need to impress. Clean design, fast loading, responsive on all devices. The client was burned by a $5K dev who didn't deliver — our work needs to speak for itself.
-
-4. **Mobile-first** — Design for mobile first, then scale up. Cleaning service customers often search on phones.
-
-5. **Document decisions** — When a technical choice is made (framework, hosting, design direction), update PROJECT.md immediately.
+1. **Demo quality first** — Visual impact, speed, and polish over feature completeness
+2. **One site at a time** — Focus on `commercial/` or `residential/` per session (don't mix unless sharing components)
+3. **Mobile-first** — Design for phones first, then scale up (cleaning service customers search on mobile)
+4. **Read PROJECT.md before building** — Check what's been done to avoid duplication
+5. **Document decisions** — Update PROJECT.md when making technical or design choices
 
 ## File Organization
 
 - `docs/` — Site analysis, brand assets, reference materials
-- `docs/brand-assets/` — Logos, images, colors pulled from current sites
-- `commercial/` — Commercial cleaning demo site source
-- `residential/` — Residential cleaning demo site source
+- `docs/brand-assets/` — Logos, images, colors from current sites
+- `commercial/` — Commercial cleaning site source
+- `residential/` — Residential cleaning site source
+- `.claude/rules/` — Project rules and guidelines (you are here!)
 - `.tmp/` — Scratch files, intermediate processing (gitignored)
 
 ## Git Conventions
 
 - Single repo covering both sites
-- Commit messages: describe what changed and which site (e.g., "Add hero section to commercial site")
+- Commit one site at a time unless sharing components
+- Commit messages: `verb: what changed and which site` (e.g., "feat: add hero section to commercial site")
+- Include co-author attribution: `Co-Authored-By: Claude Sonnet 4.5 <noreply@anthropic.com>`
 - Do not commit `.tmp/`, `node_modules/`, `.DS_Store`
