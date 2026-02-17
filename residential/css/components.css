@@ -144,11 +144,15 @@
   .hamburger {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 6px;
     background: transparent;
     border: none;
     cursor: pointer;
-    padding: var(--space-sm);
+    padding: var(--space-md);
+    min-width: 48px;
+    min-height: 48px;
     z-index: var(--z-hamburger);
     position: relative;
 
@@ -274,4 +278,62 @@ nav {
   display: block;
   opacity: 1;
   pointer-events: auto;
+}
+
+/* ==========================================================================
+   Mobile Optimizations
+   ========================================================================== */
+
+@media (max-width: 768px) {
+  /* Prevent iOS zoom on input focus */
+  .form-group input,
+  .form-group textarea,
+  .form-group select {
+    font-size: 16px; /* Critical: Prevents iOS zoom */
+    padding: var(--space-md);
+  }
+
+  /* Thicker focus borders for better mobile visibility */
+  .form-group input:focus,
+  .form-group textarea:focus,
+  .form-group select:focus {
+    border-width: 3px;
+    box-shadow: 0 0 0 6px rgba(0, 89, 130, 0.15);
+    transform: scale(1.02);
+  }
+
+  /* Larger tap targets for buttons on mobile */
+  .btn {
+    min-height: 48px;
+    padding: var(--space-md) var(--space-lg);
+  }
+
+  /* Reduce hero height on mobile */
+  .hero {
+    min-height: 60vh; /* vs 80vh desktop */
+    padding: var(--space-3xl) 0 var(--space-2xl);
+  }
+
+  /* Smaller headline on mobile */
+  .hero h1 {
+    font-size: clamp(2rem, 8vw, 3rem); /* 32-48px */
+    line-height: 1.1;
+  }
+
+  /* Ensure subtitle readable */
+  .hero__subtitle {
+    font-size: var(--fs-base);
+    max-width: 90%;
+  }
+}
+
+/* Accessibility: Respect reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }

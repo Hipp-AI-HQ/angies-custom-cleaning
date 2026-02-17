@@ -18,10 +18,10 @@
   --color-accent-hover: #A67C1A;     /* Hover state for accent */
   --color-accent-light: #FDF3DC;     /* Light accent for badge backgrounds */
 
-  /* Backgrounds: Warm whites (NOT pure #FFF) */
-  --color-bg: #FDFAF6;              /* Primary background -- warm cream-white */
-  --color-bg-alt: #F5F0EB;          /* Alternating section background -- warm light gray */
-  --color-surface: #FFFFFF;          /* Cards, elevated surfaces */
+  /* Backgrounds: Extra warm whites for family-focused residential feel */
+  --color-bg: #FFFBF5;              /* Primary background -- warmer cream-white */
+  --color-bg-alt: #FFF8EF;          /* Alternating section background -- soft peach-cream */
+  --color-surface: #FFFEF9;          /* Cards, elevated surfaces -- warm white */
 
   /* Text: Warm dark tones (NOT pure black) */
   --color-text: #2C3E50;            /* Primary body text */
@@ -71,11 +71,11 @@
   --container-max: 1200px;
   --container-padding: var(--space-md);
 
-  /* ---- Border Radius ---- */
+  /* ---- Border Radius (Softer for residential feel) ---- */
 
-  --radius-sm: 4px;
-  --radius-md: 8px;
-  --radius-lg: 16px;
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
   --radius-full: 9999px;
 
   /* ---- Shadows ---- */
