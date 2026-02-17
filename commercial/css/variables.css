@@ -80,10 +80,10 @@
 
   /* ---- Shadows ---- */
 
-  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.08);
-  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.1);
-  --shadow-lg: 0 10px 30px rgba(0, 0, 0, 0.12);
-  --shadow-xl: 0 20px 40px rgba(0, 0, 0, 0.15);
+  --shadow-sm: 0 1px 3px rgba(0, 89, 130, 0.08), 0 4px 12px rgba(197, 150, 31, 0.05);
+  --shadow-md: 0 4px 12px rgba(0, 89, 130, 0.1), 0 8px 20px rgba(197, 150, 31, 0.08);
+  --shadow-lg: 0 10px 30px rgba(0, 89, 130, 0.12), 0 4px 20px rgba(197, 150, 31, 0.15);
+  --shadow-xl: 0 20px 40px rgba(0, 89, 130, 0.15), 0 8px 30px rgba(197, 150, 31, 0.2);
 
   /* ---- Transitions ---- */
 
